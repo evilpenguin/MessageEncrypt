@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		17C6FCC622DECC4000C31B1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17C6FCC522DECC4000C31B1E /* Assets.xcassets */; };
-		17C6FCCD22DECC4000C31B1E /* MessageEncrypt MessagesExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 17C6FCCC22DECC4000C31B1E /* MessageEncrypt MessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		17C6FCCD22DECC4000C31B1E /* MessageEncryptExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 17C6FCCC22DECC4000C31B1E /* MessageEncryptExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		17C6FCD222DECC4000C31B1E /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17C6FCD122DECC4000C31B1E /* Messages.framework */; };
-		17C6FCD522DECC4000C31B1E /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C6FCD422DECC4000C31B1E /* MessagesViewController.swift */; };
-		17C6FCD822DECC4000C31B1E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17C6FCD622DECC4000C31B1E /* MainInterface.storyboard */; };
+		17C6FCD522DECC4000C31B1E /* MessagesEncryptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C6FCD422DECC4000C31B1E /* MessagesEncryptViewController.swift */; };
 		17C6FCDA22DECC4100C31B1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17C6FCD922DECC4100C31B1E /* Assets.xcassets */; };
+		17C6FCE622DED81200C31B1E /* MessageEncryptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C6FCE522DED81200C31B1E /* MessageEncryptView.swift */; };
+		17C6FCE822DEE3A100C31B1E /* String+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C6FCE722DEE3A100C31B1E /* String+Helper.swift */; };
+		17C6FCEA22DEE4E000C31B1E /* MSMessage+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C6FCE922DEE4E000C31B1E /* MSMessage+Helper.swift */; };
+		17C6FCED22DF9A0400C31B1E /* MSMessageTemplateLayout+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C6FCEC22DF9A0400C31B1E /* MSMessageTemplateLayout+Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +35,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				17C6FCCD22DECC4000C31B1E /* MessageEncrypt MessagesExtension.appex in Embed App Extensions */,
+				17C6FCCD22DECC4000C31B1E /* MessageEncryptExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,12 +46,15 @@
 		17C6FCC222DECC3E00C31B1E /* MessageEncrypt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessageEncrypt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17C6FCC522DECC4000C31B1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17C6FCC722DECC4000C31B1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		17C6FCCC22DECC4000C31B1E /* MessageEncrypt MessagesExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MessageEncrypt MessagesExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17C6FCCC22DECC4000C31B1E /* MessageEncryptExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MessageEncryptExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		17C6FCD122DECC4000C31B1E /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
-		17C6FCD422DECC4000C31B1E /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
-		17C6FCD722DECC4000C31B1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		17C6FCD422DECC4000C31B1E /* MessagesEncryptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesEncryptViewController.swift; sourceTree = "<group>"; };
 		17C6FCD922DECC4100C31B1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17C6FCDB22DECC4100C31B1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17C6FCE522DED81200C31B1E /* MessageEncryptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageEncryptView.swift; sourceTree = "<group>"; };
+		17C6FCE722DEE3A100C31B1E /* String+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Helper.swift"; sourceTree = "<group>"; };
+		17C6FCE922DEE4E000C31B1E /* MSMessage+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MSMessage+Helper.swift"; sourceTree = "<group>"; };
+		17C6FCEC22DF9A0400C31B1E /* MSMessageTemplateLayout+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MSMessageTemplateLayout+Helper.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				17C6FCC222DECC3E00C31B1E /* MessageEncrypt.app */,
-				17C6FCCC22DECC4000C31B1E /* MessageEncrypt MessagesExtension.appex */,
+				17C6FCCC22DECC4000C31B1E /* MessageEncryptExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,12 +108,39 @@
 		17C6FCD322DECC4000C31B1E /* MessageEncrypt MessagesExtension */ = {
 			isa = PBXGroup;
 			children = (
-				17C6FCD422DECC4000C31B1E /* MessagesViewController.swift */,
-				17C6FCD622DECC4000C31B1E /* MainInterface.storyboard */,
+				17C6FCEB22DEF37900C31B1E /* Source */,
 				17C6FCD922DECC4100C31B1E /* Assets.xcassets */,
 				17C6FCDB22DECC4100C31B1E /* Info.plist */,
 			);
 			path = "MessageEncrypt MessagesExtension";
+			sourceTree = "<group>";
+		};
+		17C6FCEB22DEF37900C31B1E /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				17C6FCEF22DF9A3500C31B1E /* Messages Encrypt */,
+				17C6FCEE22DF9A2700C31B1E /* Extensions */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		17C6FCEE22DF9A2700C31B1E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				17C6FCE922DEE4E000C31B1E /* MSMessage+Helper.swift */,
+				17C6FCEC22DF9A0400C31B1E /* MSMessageTemplateLayout+Helper.swift */,
+				17C6FCE722DEE3A100C31B1E /* String+Helper.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		17C6FCEF22DF9A3500C31B1E /* Messages Encrypt */ = {
+			isa = PBXGroup;
+			children = (
+				17C6FCD422DECC4000C31B1E /* MessagesEncryptViewController.swift */,
+				17C6FCE522DED81200C31B1E /* MessageEncryptView.swift */,
+			);
+			path = "Messages Encrypt";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,9 +163,9 @@
 			productReference = 17C6FCC222DECC3E00C31B1E /* MessageEncrypt.app */;
 			productType = "com.apple.product-type.application.messages";
 		};
-		17C6FCCB22DECC4000C31B1E /* MessageEncrypt MessagesExtension */ = {
+		17C6FCCB22DECC4000C31B1E /* MessageEncryptExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 17C6FCDE22DECC4100C31B1E /* Build configuration list for PBXNativeTarget "MessageEncrypt MessagesExtension" */;
+			buildConfigurationList = 17C6FCDE22DECC4100C31B1E /* Build configuration list for PBXNativeTarget "MessageEncryptExtension" */;
 			buildPhases = (
 				17C6FCC822DECC4000C31B1E /* Sources */,
 				17C6FCC922DECC4000C31B1E /* Frameworks */,
@@ -142,9 +175,9 @@
 			);
 			dependencies = (
 			);
-			name = "MessageEncrypt MessagesExtension";
+			name = MessageEncryptExtension;
 			productName = "MessageEncrypt MessagesExtension";
-			productReference = 17C6FCCC22DECC4000C31B1E /* MessageEncrypt MessagesExtension.appex */;
+			productReference = 17C6FCCC22DECC4000C31B1E /* MessageEncryptExtension.appex */;
 			productType = "com.apple.product-type.app-extension.messages";
 		};
 /* End PBXNativeTarget section */
@@ -179,7 +212,7 @@
 			projectRoot = "";
 			targets = (
 				17C6FCC122DECC3E00C31B1E /* MessageEncrypt */,
-				17C6FCCB22DECC4000C31B1E /* MessageEncrypt MessagesExtension */,
+				17C6FCCB22DECC4000C31B1E /* MessageEncryptExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -198,7 +231,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				17C6FCDA22DECC4100C31B1E /* Assets.xcassets in Resources */,
-				17C6FCD822DECC4000C31B1E /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,7 +241,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17C6FCD522DECC4000C31B1E /* MessagesViewController.swift in Sources */,
+				17C6FCE622DED81200C31B1E /* MessageEncryptView.swift in Sources */,
+				17C6FCEA22DEE4E000C31B1E /* MSMessage+Helper.swift in Sources */,
+				17C6FCE822DEE3A100C31B1E /* String+Helper.swift in Sources */,
+				17C6FCD522DECC4000C31B1E /* MessagesEncryptViewController.swift in Sources */,
+				17C6FCED22DF9A0400C31B1E /* MSMessageTemplateLayout+Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,21 +254,10 @@
 /* Begin PBXTargetDependency section */
 		17C6FCCF22DECC4000C31B1E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 17C6FCCB22DECC4000C31B1E /* MessageEncrypt MessagesExtension */;
+			target = 17C6FCCB22DECC4000C31B1E /* MessageEncryptExtension */;
 			targetProxy = 17C6FCCE22DECC4000C31B1E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		17C6FCD622DECC4000C31B1E /* MainInterface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				17C6FCD722DECC4000C31B1E /* Base */,
-			);
-			name = MainInterface.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		17C6FCDC22DECC4100C31B1E /* Debug */ = {
@@ -285,7 +310,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -339,7 +364,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -352,7 +377,7 @@
 		17C6FCDF22DECC4100C31B1E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H3YM9UX59B;
 				INFOPLIST_FILE = "MessageEncrypt MessagesExtension/Info.plist";
@@ -363,6 +388,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.emrichs.messageencrypt.MessageEncrypt.MessagesExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -372,7 +398,7 @@
 		17C6FCE022DECC4100C31B1E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H3YM9UX59B;
 				INFOPLIST_FILE = "MessageEncrypt MessagesExtension/Info.plist";
@@ -383,6 +409,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.emrichs.messageencrypt.MessageEncrypt.MessagesExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -394,11 +421,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H3YM9UX59B;
 				INFOPLIST_FILE = MessageEncrypt/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = com.emrichs.messageencrypt.MessageEncrypt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -409,11 +438,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H3YM9UX59B;
 				INFOPLIST_FILE = MessageEncrypt/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = com.emrichs.messageencrypt.MessageEncrypt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -431,7 +462,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		17C6FCDE22DECC4100C31B1E /* Build configuration list for PBXNativeTarget "MessageEncrypt MessagesExtension" */ = {
+		17C6FCDE22DECC4100C31B1E /* Build configuration list for PBXNativeTarget "MessageEncryptExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				17C6FCDF22DECC4100C31B1E /* Debug */,
